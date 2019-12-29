@@ -27,14 +27,6 @@
             <version>4.12</version>
             <scope>test</scope>
         </dependency>
-
-        <!-- not really needed, added for sake of trial -->
-        <dependency>
-            <groupId>org.hibernate</groupId>
-            <artifactId>hibernate-core</artifactId>
-            <version>5.4.4.Final</version>
-        </dependency>
     </dependencies>
-
 
 </project>
