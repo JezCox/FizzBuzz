@@ -2,7 +2,6 @@ package org.company.problem.fizzbuzz.strategy;
 
 public class Stage2Strategy extends Strategy
 {
-    // behavior is additive - hence use as a Composite
     private Stage1Strategy stage1Strategy = new Stage1Strategy();
 
 

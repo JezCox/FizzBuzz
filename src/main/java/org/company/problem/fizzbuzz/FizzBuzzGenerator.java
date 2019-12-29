@@ -9,9 +9,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class FizzBuzzGenerator {
+class FizzBuzzGenerator {
 
-    private List<Integer> input = new ArrayList<>(500);
+    private List<Integer> input;
     private Setup setup = Setup.getPreferredSetup();
 
     public FizzBuzzGenerator(int[] input) {
