@@ -4,12 +4,12 @@ import org.company.problem.fizzbuzz.results.Result;
 import org.company.problem.fizzbuzz.strategy.Strategy;
 
 // Abstract factory for "int processors"
-public abstract class IntProcessingFactory {
+public interface IntProcessingFactory {
 
-    public static FizzBuzzResultsFactory getFizzBuzzResultsFactory(Strategy strategy) {
+    static FizzBuzzResultsFactory getFizzBuzzResultsFactory(Strategy strategy) {
         return new FizzBuzzResultsFactory(strategy);
     }
 
-    public abstract Result convert(int num);
+    Result convert(int num);
 
     }

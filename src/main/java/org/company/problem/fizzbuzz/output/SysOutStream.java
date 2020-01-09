@@ -6,6 +6,6 @@ public class SysOutStream implements OutStream {
 
     @Override
     public void outputResults(Results results) {
-        results.forEach( (result) -> System.out.println(result));
+        results.forEach(System.out::println);
     }
 }

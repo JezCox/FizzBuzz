@@ -4,7 +4,6 @@ import org.company.problem.fizzbuzz.processing.FizzBuzzProcessor;
 import org.company.problem.fizzbuzz.results.Results;
 import org.company.problem.fizzbuzz.setup.Setup;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;

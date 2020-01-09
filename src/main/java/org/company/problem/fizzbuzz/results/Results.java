@@ -6,15 +6,15 @@ import java.util.List;
 
 public class Results implements Iterable<Result> {
 
-    private final List<Result> results = new ArrayList<>(500);
+    private final List<Result> resultList = new ArrayList<>(500);
 
     @Override
     public Iterator<Result> iterator() {
-        return results.iterator();
+        return resultList.iterator();
     }
 
     public void add(Result result) {
-        results.add(result);
+        resultList.add(result);
     }
 
 }

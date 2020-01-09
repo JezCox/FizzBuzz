@@ -3,7 +3,7 @@ package org.company.problem.fizzbuzz.factories;
 import org.company.problem.fizzbuzz.results.*;
 import org.company.problem.fizzbuzz.strategy.Strategy;
 
-public class FizzBuzzResultsFactory extends IntProcessingFactory {
+public class FizzBuzzResultsFactory implements IntProcessingFactory {
 
     private Strategy strategyInUse;
 

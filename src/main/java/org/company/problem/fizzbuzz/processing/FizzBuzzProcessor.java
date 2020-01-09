@@ -1,10 +1,12 @@
 package org.company.problem.fizzbuzz.processing;
 
 import org.company.problem.fizzbuzz.factories.IntProcessingFactory;
+import org.company.problem.fizzbuzz.results.Result;
 import org.company.problem.fizzbuzz.results.Results;
 import org.company.problem.fizzbuzz.strategy.Strategy;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class FizzBuzzProcessor implements Processor {
 
@@ -16,10 +18,12 @@ public class FizzBuzzProcessor implements Processor {
 
     @Override
     public Results process(List<Integer> input) {
+        List<Result> factOutput = input.stream()
+                .map(resultsFactory::convert)
+                .collect(Collectors.toList());
+
         Results results = new Results();
-        for(Integer num: input) {
-            results.add(resultsFactory.convert(num));
-        }
+        factOutput.forEach(results::add);
         return results;
     }
 }
