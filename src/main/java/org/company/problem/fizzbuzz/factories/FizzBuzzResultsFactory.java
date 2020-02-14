@@ -5,7 +5,7 @@ import org.company.problem.fizzbuzz.strategy.Strategy;
 
 public class FizzBuzzResultsFactory implements IntProcessingFactory {
 
-    private Strategy strategyInUse;
+    private final Strategy strategyInUse;
 
     public FizzBuzzResultsFactory(Strategy strategy) {
         this.strategyInUse = strategy;

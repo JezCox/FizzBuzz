@@ -2,7 +2,7 @@ package org.company.problem.fizzbuzz.strategy;
 
 public class Stage2Strategy extends Strategy
 {
-    private Stage1Strategy stage1Strategy = new Stage1Strategy();
+    private final Stage1Strategy stage1Strategy = new Stage1Strategy();
 
 
     @Override

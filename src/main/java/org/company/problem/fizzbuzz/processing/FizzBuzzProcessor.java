@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 public class FizzBuzzProcessor implements Processor {
 
-    private IntProcessingFactory resultsFactory;
+    private final IntProcessingFactory resultsFactory;
 
     public FizzBuzzProcessor(Strategy strategy) {
         resultsFactory = IntProcessingFactory.getFizzBuzzResultsFactory(strategy);

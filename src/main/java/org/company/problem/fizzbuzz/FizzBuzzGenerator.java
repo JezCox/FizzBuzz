@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 
 class FizzBuzzGenerator {
 
-    private List<Integer> input;
+    private final List<Integer> input;
     private Setup setup = Setup.getPreferredSetup();
 
     public FizzBuzzGenerator(int[] input) {
